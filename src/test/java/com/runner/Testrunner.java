@@ -9,10 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src\\test\\resources\\features",
 		glue= {"com.definition"},
-		dryRun=true,
+		dryRun=false,
 		monochrome = true,
-		plugin= {"pretty"}
-		//plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		//plugin= {"pretty"}
+		plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		//plugin= {"pretty","junit:target\\cucumberReports\\reports.xml"}
 		)
 public class Testrunner {

@@ -15,23 +15,23 @@ public class FacebookLoginPage extends Libglobal {
 		PageFactory.initElements(driver,this);
 	}
 	@FindBy(id="email")
-	private  WebElement txtUserName;
+	private static   WebElement txtUserName;
 		
 	
 	@FindBy(id="pass")
-	private  WebElement txtpassword;
+	private static  WebElement txtpassword;
 		
 	
 	@FindBy(name="login")
-	private  WebElement btnlogin;
+	private static WebElement btnlogin;
 		
-	public  WebElement gettxtUserName() {
+	public static WebElement gettxtUserName() {
 		return txtUserName;
 	}
-	public  WebElement gettxtpassword() {
+	public static WebElement gettxtpassword() {
 		return txtpassword;
 	}
-	public  WebElement getbtnlogin() {
+	public static WebElement getbtnlogin() {
 		return btnlogin;
 	}
 	
